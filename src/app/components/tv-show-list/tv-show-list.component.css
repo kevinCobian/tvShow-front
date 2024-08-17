@@ -1,0 +1,31 @@
+.tv-show-list {
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+  }
+  
+  .title {
+    margin: 0;
+    font-size: 1.5rem;
+  }
+  
+  button {
+    margin: 0;
+  }
+  
+  .table-container {
+    flex: 1;
+  }
+  
+  /* Optional: if you want to adjust table styling */
+  .mat-table {
+    width: 100%;
+  }
+  

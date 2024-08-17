@@ -1,0 +1,27 @@
+:host {
+    display: block;
+    padding: 16px;
+    max-width: 500px; /* Ajusta el ancho del modal según sea necesario */
+  }
+  
+  mat-dialog-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 16px;
+  }
+  
+  mat-form-field {
+    width: 100%;
+    margin-bottom: 16px;
+  }
+  
+  mat-dialog-actions {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 16px;
+  }
+  
+  button {
+    margin-left: 8px;
+  }
+  

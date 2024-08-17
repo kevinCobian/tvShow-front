@@ -1,0 +1,21 @@
+<h1 mat-dialog-title>{{ data.id ? 'Edit TV Show' : 'Create TV Show' }}</h1>
+
+<div mat-dialog-content>
+  <mat-form-field appearance="fill">
+    <mat-label>Name</mat-label>
+    <input matInput [(ngModel)]="data.name" placeholder="Enter TV show name">
+  </mat-form-field>
+
+  <mat-form-field appearance="fill">
+    <mat-label>Favorite</mat-label>
+    <mat-select [(ngModel)]="data.favorite">
+      <mat-option [value]="true">Yes</mat-option>
+      <mat-option [value]="false">No</mat-option>
+    </mat-select>
+  </mat-form-field>
+</div>
+
+<div mat-dialog-actions>
+  <button mat-raised-button color="accent" (click)="onNoClick()">Cancel</button>
+  <button mat-raised-button color="primary" (click)="save()">Save</button>
+</div>
