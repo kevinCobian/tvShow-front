@@ -1,0 +1,27 @@
+<div class="container">
+    <div class="navbar">
+      <h2 class="title">TV Shows</h2>
+      <button mat-raised-button color="primary" (click)="goToAdmin()">Admin</button>
+    </div>
+  
+    <div class="banner">
+      <img src="../../../assets/img/banner.webp" alt="Banner" class="banner-img">
+      <div class="banner-content">
+        <h1>Programas de Televisión</h1>
+        <p>Explora los mejores programas de televisión</p>
+      </div>
+    </div>
+    
+    <div class="tv-show-list">
+      <h2>Contenido</h2>
+      <ul>
+        <li *ngFor="let tvShow of tvShows">
+          <div class="tv-show-item">
+            <h3>{{ tvShow.name }}</h3>
+            <p>{{ tvShow.favorite ? 'Favorite' : 'Not Favorite' }}</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+  

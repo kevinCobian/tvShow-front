@@ -11,9 +11,11 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatInputModule } from '@angular/material/input';
 import { FormsModule } from '@angular/forms';
+import { TvShowHomeComponent } from './components/tv-show-home/tv-show-home.component';
 
 const routes: Routes = [
-  { path: '', component: TvShowListComponent }
+  { path: '', component: TvShowListComponent },
+  { path: 'tv-shows', component: TvShowHomeComponent }
 ];
 
 export const appConfig = {

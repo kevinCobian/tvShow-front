@@ -10,6 +10,7 @@ import { FormsModule } from '@angular/forms';
 
 import { TvShowService } from '../../services/tv-show.service';
 import { TvShow } from '../../models/tv-show.model';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-tv-show-list',
@@ -29,7 +30,7 @@ export class TvShowListComponent implements OnInit {
   tvShows: TvShow[] = [];
   displayedColumns: string[] = ['id', 'name', 'favorite', 'actions'];
 
-  constructor(private tvShowService: TvShowService, public dialog: MatDialog) { }
+  constructor(private tvShowService: TvShowService, public dialog: MatDialog, private router: Router) { }
 
   ngOnInit(): void {
     this.getTvShows();
@@ -75,5 +76,9 @@ export class TvShowListComponent implements OnInit {
         });
       }
     });
+  }
+
+  goToHome() {
+    this.router.navigate(['/tv-shows']);
   }
 }
